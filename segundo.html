@@ -8,10 +8,49 @@
 </head>
 <body>
     <script>
-        //voy a escribir todo mi codigo y nada mas
-        let primerVariable = 10;
-        primerVariable += 5;
-        console.log("Resultado de la variable: segundo cambio en el local" + primerVariable)
+        //estructuras de repeticion
+        //imprimir los numero pares o impares del 1 al 100
+        console.log("2")
+        console.log("4")
+        console.log("6")
+        console.log("8")
+        console.log("10")
+
+        //while
+        let contador = 1;
+
+        while (contador <= 100){
+            console.log(contador);
+            contador = contador + 2;
+            if(contador === 13){
+                console.log("Si encntre el 7")
+                break;
+            }
+        }
+        //do while
+        /*let incrementador = 2;
+        do{
+            console.log(incrementador);
+            incrementador = incrementador + 2;
+        }while(incrementador <=10)
+        //for
+        for (let c = 1; c <= 10; c = c + 2){
+            console.log(c);
+        }*/
+
+        /*
+         public static initArray(width: number, height: number): any {
+    var arrImage = new Array(3);
+    arrImage[0] = new Array(height);
+    arrImage[1] = new Array(height);
+    arrImage[2] = new Array(height);
+    for (let i = 0; i < height; i++) {
+      arrImage[0][i] = new Array(width);
+      arrImage[1][i] = new Array(width);
+      arrImage[2][i] = new Array(width);
+    }
+    return arrImage;
+  }*/
     </script>
 </body>
 </html>
