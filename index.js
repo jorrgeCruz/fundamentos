@@ -26,7 +26,7 @@ function sumaMat(matA, matB){
         return R;
     }
     else 
-        return 0;
+        return "operacion en discordancia de matrices";
 }
 
 function restaMat(matA, matB){
@@ -54,6 +54,7 @@ function multiplicaMat(matA, matB){
         for(let j=0; j < matA[0].length; j++){
             let suma=0;
             for(let k=0; k < matA[0].length; k++){
+                debugger;
                 suma += matA[i][k] * matB[k][j];
             }
             R[i][j]= suma;
@@ -75,8 +76,9 @@ let B = [[1,0,1],
 
 let matR = sumaMat(A, B);
 console.table(matR)
-//matR = multiplicaMat( A, B);
-//console.table(matR)
+
+matR = multiplicaMat( A, B);
+console.table(matR)
 /*
 function print(value) {
     const precision = 14
