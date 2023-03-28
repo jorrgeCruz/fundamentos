@@ -6,7 +6,7 @@ function insertarElemento(evt){
     indice = parseInt(indice);
     let arreglo = cadenaArreglo.split(',');
     console.log(arreglo, elemento, indice);
-    document.getElementById("salida").innerHTML =  "<p> el arreglo nuevo es" + arreglo +  "</p>";
+    document.getElementById("salida").innerHTML =  "<p> el arreglo nuevo" + arreglo +  "</p>";
 
 }
 
